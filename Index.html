@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/Styles.css">
+    <title> Carrusel de Testimonios </title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/574px-NASA_logo.svg.png"
+                alt="Logo de la marca">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li> <a href="#">Inicio</a></li>
+                <li> <a href="#">Testimonio</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn"><button>Contacto</button></a>
+    </header>
+
+    <div class="slide-contenedor">
+        <div class="miSlider fade">
+            <h3> Valeria </h3>
+            <img src="./img/1.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque ipsam, eligendi quibusdam </p>
+        </div>
+        <div class="miSlider fade">
+            <h3>Rud</h3>
+            <img src="./img/2.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque ipsam, eligendi quibusdam </p>
+        </div>
+        <div class="miSlider fade">
+            <h3> Albert</h3>
+            <img src="./img/3.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque ipsam, eligendi quibusdam </p>
+        </div>
+        <div class="miSlider fade">
+            <h3>Angél</h3>
+            <img src="./img/4.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque ipsam, eligendi quibusdam </p>
+        </div>
+        <div class="direcciones">
+            <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+            <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+        </div>
+        <div class="barras">
+            <span class="barra active" onclick="posicionSlide(1)"></span>
+            <span class="barra" onclick="posicionSlide(2)"></span>
+            <span class="barra" onclick="posicionSlide(3)"></span>
+            <span class="barra" onclick="posicionSlide(4)"></span>
+        </div>
+    </div>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>
